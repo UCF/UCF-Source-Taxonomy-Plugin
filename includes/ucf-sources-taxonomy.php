@@ -1,6 +1,6 @@
 <?php
 /**
- * Responsible for resgitering the taxonomy
+ * Responsible for registering the taxonomy
  **/
 if ( ! class_exists( 'UCF_Sources_Taxonomy' ) ) {
 	class UCF_Sources_Taxonomy {
@@ -77,7 +77,7 @@ if ( ! class_exists( 'UCF_Sources_Taxonomy' ) ) {
 				)
 			);
 
-			$args = apply_filters( 'ucf_soures_args', $args );
+			$args = apply_filters( 'ucf_sources_args', $args );
 
 			return $args;
 		}

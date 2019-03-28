@@ -15,8 +15,6 @@ if ( ! defined( 'WPINC' ) ) {
 define( 'UCF_SOURCES__FILE', __FILE__ );
 
 include_once 'includes/ucf-sources-taxonomy.php';
-include_once 'includes/ucf-sources-fields.php';
-// include_once 'includes/ucf-sources-common.php';
 
 if ( ! function_exists( 'ucf_sources_activation' ) ) {
 	function ucf_sources_activation() {
@@ -37,10 +35,8 @@ if ( ! function_exists( 'ucf_sources_deactivation' ) ) {
 // can check for the existence of other post_types and taxonomies
 if ( ! function_exists( 'ucf_sources_init' ) ) {
 	function ucf_sources_init() {
-		// Resgiter custom taxonomy
+		// Register custom taxonomy
 		add_action( 'init', array( 'UCF_Sources_Taxonomy', 'register' ), 10, 0 );
-		// Register custom meta fields
-		add_action( 'init', array( 'UCF_Sources_Fields', 'register_meta_fields' ), 10, 0 );
 	}
 	add_action( 'plugins_loaded', 'ucf_sources_init' );
 }

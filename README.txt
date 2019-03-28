@@ -15,9 +15,11 @@ WordPress taxonomy for describing sources.
 Provides a custom taxonomy for describing Sources. Designed to leverage default WordPress templates and be overridden by taxonomy specific templates.
 
 
-== Documentation ==
+== Required plugins ==
 
-Head over to the [UCF Source Taxonomy Plugin wiki](https://github.com/UCF/UCF-Source-Taxonomy-Plugin/wiki) for detailed information about this plugin, installation instructions, and more.
+These plugins must be activated for Online Utilities to function properly.
+
+* [Advanced Custom Fields](https://www.advancedcustomfields.com/)
 
 
 == Changelog ==
