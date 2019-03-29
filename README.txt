@@ -17,7 +17,7 @@ Provides a custom taxonomy for describing Sources. Designed to leverage default 
 
 == Required plugins ==
 
-These plugins must be activated for Online Utilities to function properly.
+These plugins must be activated for the plugin to function properly.
 
 * [Advanced Custom Fields](https://www.advancedcustomfields.com/)
 
