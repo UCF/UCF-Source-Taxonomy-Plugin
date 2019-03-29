@@ -64,7 +64,7 @@ if ( ! class_exists( 'UCF_Sources_Taxonomy' ) ) {
 
 			$args = array(
 				'labels'                     => self::labels( $singular, $plural ),
-				'hierarchical'               => true,
+				'hierarchical'               => false,
 				'public'                     => true,
 				'show_ui'                    => true,
 				'show_admin_column'          => true,
