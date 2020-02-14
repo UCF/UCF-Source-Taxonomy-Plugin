@@ -17,6 +17,10 @@ These plugins must be activated for the plugin to function properly.
 
 ## Changelog ##
 
+### 1.0.1 ###
+Documentation:
+* Updated contributing doc to reflect the switch from slack to teams.
+
 ### 1.0.0 ###
 * Initial release
 
