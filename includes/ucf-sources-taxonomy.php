@@ -103,24 +103,9 @@ if ( ! class_exists( 'UCF_Sources_Taxonomy' ) ) {
 				'label'             => 'Source Icon',
 				'name'              => 'source_icon',
 				'type'              => 'image',
-				'instructions'      => '',
 				'required'          => 1,
-				'conditional_logic' => 0,
-				'wrapper'           => array(
-					'width' => '',
-					'class' => '',
-					'id'    => '',
-				),
 				'return_format'     => 'url',
 				'preview_size'      => 'thumbnail',
-				'library'           => 'all',
-				'min_width'         => '',
-				'min_height'        => '',
-				'min_size'          => '',
-				'max_width'         => '',
-				'max_height'        => '',
-				'max_size'          => '',
-				'mime_types'        => '',
 			);
 
 			/**
@@ -139,15 +124,6 @@ if ( ! class_exists( 'UCF_Sources_Taxonomy' ) ) {
 						),
 					),
 				),
-				'menu_order'            => 0,
-				'position'              => 'normal',
-				'style'                 => 'default',
-				'label_placement'       => 'top',
-				'instruction_placement' => 'label',
-				'hide_on_screen'        => '',
-				'active'                => true,
-				'description'           => '',
-
 			);
 
 			acf_add_local_field_group( $field_group );
