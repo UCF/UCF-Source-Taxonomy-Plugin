@@ -39,7 +39,7 @@ if ( ! function_exists( 'ucf_sources_init' ) ) {
 		add_action( 'init', array( 'UCF_Sources_Taxonomy', 'register' ), 10, 0 );
 
 		// Register ACF fields for custom taxonomy
-		if ( is_plugin_active( 'advanced-custom-fields-pro/acf.php' ) ) {
+		if ( is_plugin_active( 'advanced-custom-fields-pro/acf.php' ) || is_plugin_active( 'advanced-custom-fields/acf.php' ) ) {
 			add_action( 'acf/init', array( 'UCF_Sources_Taxonomy', 'register_acf_fields' ), 10, 0 );
 		}
 	}
