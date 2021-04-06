@@ -81,5 +81,52 @@ if ( ! class_exists( 'UCF_Sources_Taxonomy' ) ) {
 
 			return $args;
 		}
+
+		/**
+		 * Registers the ACF Fields for Sources
+		 * @author Cadie Stockman
+		 * @since 1.1.0
+		 * @return void
+		 */
+		public static function register_acf_fields() {
+			// Bail out if the function is missing.
+			if ( ! function_exists( 'acf_add_local_field_group' ) ) return;
+
+			// Create the field array.
+			$fields = array();
+
+			/**
+			 * Adds the Source Icon field
+			 */
+			$fields[] = array(
+				'key'               => 'field_5c9d07cbed834',
+				'label'             => 'Source Icon',
+				'name'              => 'source_icon',
+				'type'              => 'image',
+				'required'          => 1,
+				'return_format'     => 'url',
+				'preview_size'      => 'thumbnail',
+			);
+
+			/**
+			 * Defines field group
+			 */
+			$field_group = array(
+				'key'                   => 'group_5c9d07be917b6',
+				'title'                 => 'Sources Taxonomy Fields',
+				'fields'                => $fields,
+				'location'              => array(
+					array(
+						array(
+							'param'    => 'taxonomy',
+							'operator' => '==',
+							'value'    => 'sources',
+						),
+					),
+				),
+			);
+
+			acf_add_local_field_group( $field_group );
+		}
 	}
 }

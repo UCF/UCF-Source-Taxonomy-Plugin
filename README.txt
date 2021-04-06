@@ -1,9 +1,9 @@
 === UCF Source Taxonomy Plugin ===
 Contributors: ucfwebcom
 Requires at least: 4.9.7
-Tested up to: 4.9.7
-Stable tag: 1.0.1
-Requires PHP: 5.4
+Tested up to: 5.7
+Stable tag: 1.1.0
+Requires PHP: 7.0
 License: GPLv3 or later
 License URI: http://www.gnu.org/copyleft/gpl-3.0.html
 
@@ -23,6 +23,10 @@ These plugins must be activated for the plugin to function properly.
 
 
 == Changelog ==
+
+= 1.1.0 =
+Enhancements:
+* Moved ACF fields to code and removed the acf-export.json file
 
 = 1.0.1 =
 Documentation:
@@ -53,8 +57,7 @@ Changes to these files should be tracked via git (so that users installing the p
 3. Run `gulp default` to process front-end assets.
 4. If you haven't already done so, create a new WordPress site on your development environment to test this plugin.
 5. Activate this plugin on your development WordPress site.
-6. [Download this theme's ACF config file](https://github.com/UCF/UCF-Source-Taxonomy-Plugin/blob/master/dev/acf-export.json), and import field groups using the ACF importer under Custom Fields > Tools.
-7. Run `gulp watch` to continuously watch changes to readme.txt file. If you enabled BrowserSync in `gulp-config.json`, it will also reload your browser when plugin files change.
+6. Run `gulp watch` to continuously watch changes to readme.txt file. If you enabled BrowserSync in `gulp-config.json`, it will also reload your browser when plugin files change.
 
 = Other Notes =
 * This plugin's README.md file is automatically generated. Please only make modifications to the README.txt file, and make sure the `gulp readme` command has been run before committing README changes.  See the [contributing guidelines](https://github.com/UCF/UCF-Source-Taxonomy-Plugin/blob/master/CONTRIBUTING.md) for more information.
