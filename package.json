@@ -2,7 +2,7 @@
   "name": "ucf-source-taxonomy-plugin",
   "private": true,
   "devDependencies": {
-    "gulp": "^4.0.0",
+    "gulp": "^4.0.2",
     "gulp-readme-to-markdown": "^0.2.1"
   }
 }
