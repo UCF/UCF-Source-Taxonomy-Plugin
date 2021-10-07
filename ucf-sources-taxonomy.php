@@ -2,7 +2,7 @@
 /*
 Plugin Name: UCF Source Taxonomy Plugin
 Description: Plugin to create a WordPress Source Taxonomy.
-Version: 1.0.1
+Version: 1.1.0
 Author: UCF Web Communications
 License: GPL3
 GitHub Plugin URI: UCF/UCF-Source-Taxonomy-Plugin
@@ -14,6 +14,7 @@ if ( ! defined( 'WPINC' ) ) {
 
 define( 'UCF_SOURCES__FILE', __FILE__ );
 
+include_once 'includes/utilities.php';
 include_once 'includes/ucf-sources-taxonomy.php';
 
 if ( ! function_exists( 'ucf_sources_activation' ) ) {
@@ -37,6 +38,11 @@ if ( ! function_exists( 'ucf_sources_init' ) ) {
 	function ucf_sources_init() {
 		// Register custom taxonomy
 		add_action( 'init', array( 'UCF_Sources_Taxonomy', 'register' ), 10, 0 );
+
+		// Register ACF fields for custom taxonomy
+		if ( ucf_sources_acf_is_active() ) {
+			add_action( 'acf/init', array( 'UCF_Sources_Taxonomy', 'register_acf_fields' ), 10, 0 );
+		}
 	}
 	add_action( 'plugins_loaded', 'ucf_sources_init' );
 }
