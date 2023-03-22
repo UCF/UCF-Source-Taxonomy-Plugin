@@ -1,0 +1,8 @@
+{
+    "name": "ucf/ucf-source-taxonomy-plugin",
+    "description": "WordPress taxonomy for describing sources.",
+    "type": "wordpress-plugin",
+    "require": {
+        "composer/installers": "~1.0"
+    }
+}

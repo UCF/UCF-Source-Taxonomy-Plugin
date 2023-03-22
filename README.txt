@@ -1,8 +1,8 @@
 === UCF Source Taxonomy Plugin ===
 Contributors: ucfwebcom
 Requires at least: 4.9.7
-Tested up to: 5.7
-Stable tag: 1.1.0
+Tested up to: 6.1
+Stable tag: 1.1.1
 Requires PHP: 7.0
 License: GPLv3 or later
 License URI: http://www.gnu.org/copyleft/gpl-3.0.html
@@ -23,6 +23,10 @@ These plugins must be activated for the plugin to function properly.
 
 
 == Changelog ==
+
+= 1.1.1 =
+Enhancements:
+* Added composer file.
 
 = 1.1.0 =
 Enhancements:
